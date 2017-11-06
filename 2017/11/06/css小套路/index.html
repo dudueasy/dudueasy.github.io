@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>css使用小套路 | Apolo&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="消除默认样式1. 清除内外边框很多元素会自带样式, 通常有margin和padding, 为了更好的布局, 可以把它们的内边框和外边框都清除, 每一个元素再相应的根据情况来设置内外边框. * {     margin: 0;     padding: 0; } 2. 清除a标签的样式a标签自带了字体颜色, 和下划线, 如果要清除a标签的默认样式让下划线不再出现, 不仅仅要消除默认状态的下划线, h">
+<meta name="keywords" content="css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css使用小套路">
+<meta property="og:url" content="http://yoursite.com/2017/11/06/css小套路/index.html">
+<meta property="og:site_name" content="Apolo&#39;s Blog">
+<meta property="og:description" content="消除默认样式1. 清除内外边框很多元素会自带样式, 通常有margin和padding, 为了更好的布局, 可以把它们的内边框和外边框都清除, 每一个元素再相应的根据情况来设置内外边框. * {     margin: 0;     padding: 0; } 2. 清除a标签的样式a标签自带了字体颜色, 和下划线, 如果要清除a标签的默认样式让下划线不再出现, 不仅仅要消除默认状态的下划线, h">
+<meta property="og:updated_time" content="2017-11-06T16:51:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="css使用小套路">
+<meta name="twitter:description" content="消除默认样式1. 清除内外边框很多元素会自带样式, 通常有margin和padding, 为了更好的布局, 可以把它们的内边框和外边框都清除, 每一个元素再相应的根据情况来设置内外边框. * {     margin: 0;     padding: 0; } 2. 清除a标签的样式a标签自带了字体颜色, 和下划线, 如果要清除a标签的默认样式让下划线不再出现, 不仅仅要消除默认状态的下划线, h">
+  
+    <link rel="alternative" href="/atom.xml" title="Apolo&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+	<h1 class="blog-title">
+		<a href="/">Apolo&#39;s Blog</a>
+	</h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
+			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
+			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+	</div>
+</header>
+    <div id="main">
+      <article id="post-css小套路" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2017/11/06/css小套路/" class="article-date">
+  <time datetime="2017-11-06T15:05:21.000Z" itemprop="datePublished">2017-11-06</time>
+</a>
+		</span>
+		<span class="meta-elements author">Apolo Du</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 class="article-title entry-title" itemprop="name">
+      css使用小套路
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<h2 id="消除默认样式"><a href="#消除默认样式" class="headerlink" title="消除默认样式"></a>消除默认样式</h2><h3 id="1-清除内外边框"><a href="#1-清除内外边框" class="headerlink" title="1. 清除内外边框"></a>1. 清除内外边框</h3><p>很多元素会自带样式, 通常有margin和padding, 为了更好的布局, 可以把它们的内边框和外边框都清除, 每一个元素再相应的根据情况来设置内外边框.</p>
+<pre><code>* {
+    margin: 0;
+    padding: 0;
+}
+</code></pre><h3 id="2-清除a标签的样式"><a href="#2-清除a标签的样式" class="headerlink" title="2. 清除a标签的样式"></a>2. 清除a标签的样式</h3><p>a标签自带了字体颜色, 和下划线, 如果要清除a标签的默认样式让下划线不再出现, 不仅仅要消除默认状态的下划线, hover状态的样式也要设置哦<br>    a {<br>        color: #FFF;<br>        text-decoration: none;<br>    }<br>    a:hover {<br>        text-decoration: none;<br>    }</p>
+<h3 id="3-清除列表标签的样式"><a href="#3-清除列表标签的样式" class="headerlink" title="3. 清除列表标签的样式:"></a>3. 清除列表标签的样式:</h3><p>无序列表和有序列表除了自带了margin和padding属性之外, 还自带了列表前面的小星标, 通过设置 list-style:none 来消除它<br>    ol, ul {<br>        list-style:none;<br>    }</p>
+<h2 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h2><p>一下是一个建议的清除浮动方法: 在浮动元素的父元素加上这个类, 利用 :after伪类, 来清除浮动, 避免使用多余的标签.<br>    .clearfix:after{<br>        content=’’;<br>        display=block;<br>        clear:both;<br>    }</p>
+<h2 id="关于行内元素的宽和高设定"><a href="#关于行内元素的宽和高设定" class="headerlink" title="关于行内元素的宽和高设定"></a>关于行内元素的宽和高设定</h2><p>行内元素的宽和高是无法通过 height 和 width 属性来设置的, 除非将其变成一个块级元素.<br>好的做法是使用 padding 来将一个行内元素扩展到所需的高度和宽度.</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+			</span>
+			<span class="tags">
+				
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
+
+			</span>
+		</div>
+	</footer>
+	
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/10/22/使用hexo搭建博客系统/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">
+        
+          使用Hexo + GitHub搭建博客系统
+        
+      </div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+    </div>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+<footer id="footer">
+	<h1 class="footer-blog-title">
+		<a href="/">Apolo&#39;s Blog</a>
+	</h1>
+	<span class="copyright">
+		&copy; 2017 Apolo Du<br>
+		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+</footer>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

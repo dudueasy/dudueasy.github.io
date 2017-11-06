@@ -73,10 +73,25 @@
     margin: 0;
     padding: 0;
 }
-</code></pre><h3 id="2-清除a标签的样式"><a href="#2-清除a标签的样式" class="headerlink" title="2. 清除a标签的样式"></a>2. 清除a标签的样式</h3><p>a标签自带了字体颜色, 和下划线, 如果要清除a标签的默认样式让下划线不再出现, 不仅仅要消除默认状态的下划线, hover状态的样式也要设置哦<br>        a {<br>            color: #FFF;<br>            text-decoration: none;<br>        }<br>        a:hover {<br>            text-decoration: none;<br>        }</p>
-<h3 id="3-清除列表标签的样式"><a href="#3-清除列表标签的样式" class="headerlink" title="3. 清除列表标签的样式:"></a>3. 清除列表标签的样式:</h3><p>无序列表和有序列表除了自带了margin和padding属性之外, 还自带了列表前面的小星标, 通过设置 list-style:none 来消除它<br>        ol, ul {<br>            list-style:none;<br>        }</p>
-<h2 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h2><p>一下是一个建议的清除浮动方法: 在浮动元素的父元素加上这个类, 利用 :after伪类, 来清除浮动, 避免使用多余的标签.<br>        .clearfix:after{<br>            content=’’;<br>            display=block;<br>            clear:both;<br>        }</p>
-<h2 id="关于行内元素的宽和高设定"><a href="#关于行内元素的宽和高设定" class="headerlink" title="关于行内元素的宽和高设定"></a>关于行内元素的宽和高设定</h2><p>行内元素的宽和高是无法通过 height 和 width 属性来设置的, 除非将其变成一个块级元素.<br>好的做法是使用 padding 来将一个行内元素扩展到所需的高度和宽度.</p>
+</code></pre><h3 id="2-清除a标签的样式"><a href="#2-清除a标签的样式" class="headerlink" title="2. 清除a标签的样式"></a>2. 清除a标签的样式</h3><p>a标签自带了字体颜色, 和下划线, 如果要清除a标签的默认样式让下划线不再出现, 不仅仅要消除默认状态的下划线, hover状态的样式也要设置哦</p>
+<pre><code>a {
+    color: #FFF;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+</code></pre><h3 id="3-清除列表标签的样式"><a href="#3-清除列表标签的样式" class="headerlink" title="3. 清除列表标签的样式:"></a>3. 清除列表标签的样式:</h3><p>无序列表和有序列表除了自带了margin和padding属性之外, 还自带了列表前面的小星标, 通过设置 list-style:none 来消除它</p>
+<pre><code>ol, ul {
+    list-style:none;
+}
+</code></pre><h2 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h2><p>一下是一个建议的清除浮动方法: 在浮动元素的父元素加上这个类, 利用 :after伪类, 来清除浮动, 避免使用多余的标签.</p>
+<pre><code>.clearfix:after{
+    content=&apos;&apos;;
+    display=block;
+    clear:both;
+}
+</code></pre><h2 id="关于行内元素的宽和高设定"><a href="#关于行内元素的宽和高设定" class="headerlink" title="关于行内元素的宽和高设定"></a>关于行内元素的宽和高设定</h2><p>行内元素的宽和高是无法通过 height 和 width 属性来设置的, 除非将其变成一个块级元素.<br>好的做法是使用 padding 来将一个行内元素扩展到所需的高度和宽度.</p>
 
     
 	</div>

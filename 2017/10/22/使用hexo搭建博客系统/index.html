@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/10/22/使用hexo搭建博客系统/index.html">
 <meta property="og:site_name" content="Apolo&#39;s Blog">
 <meta property="og:description" content="准备工作1.进入用户目录~下, 新建一个文件夹a用于存放hexo文件2.在GitHub上新建一个空的repo, repo的名称设置为用户名.github.io, 这个repo将用于让hexo部署博客 安装hexo1.进入新建的文件夹, 运行以下命令安装hexonpm install -g hexo-cli 2.使用hexo生成一个子目录myBloghexo init myBlog cd myBlo">
-<meta property="og:updated_time" content="2017-10-21T20:39:59.000Z">
+<meta property="og:updated_time" content="2017-11-06T16:59:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Hexo + GitHub搭建博客系统">
 <meta name="twitter:description" content="准备工作1.进入用户目录~下, 新建一个文件夹a用于存放hexo文件2.在GitHub上新建一个空的repo, repo的名称设置为用户名.github.io, 这个repo将用于让hexo部署博客 安装hexo1.进入新建的文件夹, 运行以下命令安装hexonpm install -g hexo-cli 2.使用hexo生成一个子目录myBloghexo init myBlog cd myBlo">
@@ -112,6 +112,14 @@ hexo deploy
 <h3 id="至此-使用Hexo在github上搭建博客就已经完成-刷新后就能看到完成的博客页面"><a href="#至此-使用Hexo在github上搭建博客就已经完成-刷新后就能看到完成的博客页面" class="headerlink" title="至此, 使用Hexo在github上搭建博客就已经完成, 刷新后就能看到完成的博客页面."></a>至此, 使用Hexo在github上搭建博客就已经完成, 刷新后就能看到完成的博客页面.</h3><h2 id="博客代码的备份"><a href="#博客代码的备份" class="headerlink" title="博客代码的备份"></a>博客代码的备份</h2><ol>
 <li>在GitHub上新建一个仓库, 将生成博客的代码备份到GitHub. </li>
 <li>每次编辑完博客, 还要 add/ commit /push, 将更改提交到GitHub仓库.</li>
+</ol>
+<h2 id="每次生成和提交一篇新的博文需要的操作"><a href="#每次生成和提交一篇新的博文需要的操作" class="headerlink" title="每次生成和提交一篇新的博文需要的操作:"></a>每次生成和提交一篇新的博文需要的操作:</h2><ol>
+<li>新建一篇文章<pre><code>hexo new 文章名字
+</code></pre>然后编辑文章的内容.</li>
+<li>生成博客文件<pre><code>hexo generate
+</code></pre></li>
+<li>部署到github<pre><code>hexo deploy     
+</code></pre></li>
 </ol>
 
     

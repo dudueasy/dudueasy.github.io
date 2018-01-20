@@ -2,10 +2,17 @@
 <html>
 <head>
   <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<title>
   
-  <title>css实用小套路 | Apolo&#39;s Blog</title>
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="消除默认样式1. 清除内外边框很多元素会自带样式, 通常有margin和padding, 为了更好的布局, 可以把它们的内边框和外边框都清除, 每一个元素再相应的根据情况来设置内外边框. * {     margin: 0;     padding: 0; } 2. 清除a标签的样式a标签自带了字体颜色, 和下划线, 如果要让下划线不再出现, 不仅仅要消除默认状态的下划线, hover状态的样式也">
+    css实用小套路
+  
+</title>
+
+<meta name="description" content="消除默认样式1. 清除内外边框很多元素会自带样式, 通常有margin和padding, 为了更好的布局, 可以把它们的内边框和外边框都清除, 每一个元素再相应的根据情况来设置内外边框. * {     margin: 0;     padding: 0; } 2. 清除a标签的样式a标签自带了字体颜色, 和下划线, 如果要让下划线不再出现, 不仅仅要消除默认状态的下划线, hover状态的样式也">
 <meta name="keywords" content="css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css实用小套路">
@@ -16,62 +23,157 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css实用小套路">
 <meta name="twitter:description" content="消除默认样式1. 清除内外边框很多元素会自带样式, 通常有margin和padding, 为了更好的布局, 可以把它们的内边框和外边框都清除, 每一个元素再相应的根据情况来设置内外边框. * {     margin: 0;     padding: 0; } 2. 清除a标签的样式a标签自带了字体颜色, 和下划线, 如果要让下划线不再出现, 不仅仅要消除默认状态的下划线, hover状态的样式也">
-  
-    <link rel="alternative" href="/atom.xml" title="Apolo&#39;s Blog" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
+
+
+  <link rel="alternative" href="/atom.xml" title="Apolo&#39;s Blog" type="application/atom+xml">
+
+
+
+  <link rel="icon" href="/favicon.png">
+
+
+<link rel="stylesheet" href="/perfect-scrollbar/css/perfect-scrollbar.min.css">
+<link rel="stylesheet" href="/styles/main.css">
+
+
+
+
+
+
 </head>
-<body>
-  <div id="container">
-    <div class="mobile-nav-panel">
-	<i class="icon-reorder icon-large"></i>
-</div>
-<header id="header">
-	<h1 class="blog-title">
-		<a href="/">Apolo&#39;s Blog</a>
-	</h1>
-	<nav class="nav">
-		<ul>
-			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
-			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
-			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
-		</ul>
-	</nav>
-	<div id="search-form-wrap">
-		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-	</div>
-</header>
-    <div id="main">
-      <article id="post-css实用小套路" class="post">
-	<footer class="entry-meta-header">
-		<span class="meta-elements date">
-			<a href="/2017/11/06/css实用小套路/" class="article-date">
-  <time datetime="2017-11-06T15:05:21.000Z" itemprop="datePublished">2017-11-06</time>
-</a>
-		</span>
-		<span class="meta-elements author">Apolo Du</span>
-		<div class="commentscount">
-			
-		</div>
-	</footer>
-	
-	<header class="entry-header">
-		
+<body
   
-    <h1 class="article-title entry-title" itemprop="name">
+    class="monochrome"
+  
+  >
+  <div class="mobile-header">
+  <button class="sidebar-toggle" type="button">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <a class="title" href="/">Apolo&#39;s Blog</a>
+</div>
+
+  <div class="main-container">
+    <div class="sidebar">
+  <div class="header">
+    <h1 class="title"><a href="/">Apolo&#39;s Blog</a></h1>
+    
+    <div class="info">
+      <div class="content">
+        
+        
+          <div class="author">Apolo Du</div>
+        
+      </div>
+      
+        <div class="avatar">
+          
+            <a href="/about"><img src="https://cn.gravatar.com/avatar/35fef74d731255cd569c2c2b0b9e87e4?s=200"></a>
+          
+        </div>
+      
+    </div>
+  </div>
+  <div class="body">
+    
+      
+        <ul class="nav">
+          
+            
+              <li class="category-list-container">
+                <a href="javascript:;">分类</a>
+                
+              </li>
+            
+          
+            
+              <li class="tag-list-container">
+                <a href="javascript:;">标签</a>
+                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">1</span></li></ul>
+              </li>
+            
+          
+            
+              <li class="archive-list-container">
+                <a href="javascript:;">归档</a>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a><span class="archive-list-count">2</span></li></ul>
+              </li>
+            
+          
+        </ul>
+      
+        <ul class="nav">
+          
+            
+              <li>
+                <a href="/" title="Homepage">Homepage</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/archives" title="By Year">By Year</a>
+              </li>
+            
+          
+        </ul>
+      
+        <ul class="nav">
+          
+            
+              <li>
+                <a href="https://github.com/denjones/hexo-theme-chan" title="Chan" target="_blank" rel="external noopener">Chan</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="https://github.com/denjones" title="Github" target="_blank" rel="external noopener">Github</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/atom.xml" title="RSS">RSS</a>
+              </li>
+            
+          
+        </ul>
+      
+    
+  </div>
+</div>
+
+    <div class="main-content">
+      
+        <div style="max-width: 1000px">
+      
+          <article id="post-css实用小套路" class="article article-type-post">
+  
+    <h1 class="article-header">
       css实用小套路
     </h1>
   
+  
 
-	</header>
-	<div class="entry-content">
-		
-    	<h2 id="消除默认样式"><a href="#消除默认样式" class="headerlink" title="消除默认样式"></a>消除默认样式</h2><h3 id="1-清除内外边框"><a href="#1-清除内外边框" class="headerlink" title="1. 清除内外边框"></a>1. 清除内外边框</h3><p>很多元素会自带样式, 通常有margin和padding, 为了更好的布局, 可以把它们的内边框和外边框都清除, 每一个元素再相应的根据情况来设置内外边框.</p>
+  <div class="article-info">
+    <span class="article-date">
+  2017-11-06
+</span>
+
+    
+
+    
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
+	</span>
+
+
+  </div>
+  <div class="article-entry">
+    <h2 id="消除默认样式"><a href="#消除默认样式" class="headerlink" title="消除默认样式"></a>消除默认样式</h2><h3 id="1-清除内外边框"><a href="#1-清除内外边框" class="headerlink" title="1. 清除内外边框"></a>1. 清除内外边框</h3><p>很多元素会自带样式, 通常有margin和padding, 为了更好的布局, 可以把它们的内边框和外边框都清除, 每一个元素再相应的根据情况来设置内外边框.</p>
 <pre><code>* {
     margin: 0;
     padding: 0;
@@ -96,69 +198,119 @@ a:hover {
 }
 </code></pre><h2 id="关于行内元素的宽和高设定"><a href="#关于行内元素的宽和高设定" class="headerlink" title="关于行内元素的宽和高设定"></a>关于行内元素的宽和高设定</h2><p>行内元素的宽和高是无法通过 height 和 width 属性来设置的, 除非将其变成一个块级元素.<br>好的做法是使用 padding 来将这个行内元素扩展到所需的高度和宽度.</p>
 
+  </div>
+  <footer class="article-footer">
     
-	</div>
-	<footer class="entry-footer">
-		<div class="entry-meta-footer">
-			<span class="category">
-				
-			</span>
-			<span class="tags">
-				
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
-
-			</span>
-		</div>
-	</footer>
-	
-    
-<nav id="article-nav">
-  
-  
-    <a href="/2017/10/22/使用hexo搭建博客系统/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">
+  <div class="cc">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank" title="署名-相同方式共享">
+      <img src="/images/cc/cc.png">
+      
+          <img src="/images/cc/by.png">
         
-          使用Hexo + GitHub搭建博客系统
-        
-      </div>
+          <img src="/images/cc/sa.png">
+      
+      <span>
+        本作品采用知识共享 署名-相同方式共享 4.0 国际许可协议进行许可。
+      </span>
     </a>
-  
-</nav>
+  </div>
 
-  
+
+    
+
+  </footer>
 </article>
 
 
 
 
-    </div>
-    <div class="mb-search">
-  <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Search">
-    <input type="hidden" name="q" value="site:yoursite.com">
-  </form>
+
+
+
+          <div class="main-footer">
+  
+    © 2018 Apolo&#39;s Blog - Powered by <a href="http://hexo.io" target="_blank">Hexo</a> - Theme <a href="https://github.com/denjones/hexo-theme-chan" target="_blank">Chan</a>
+  
 </div>
-<footer id="footer">
-	<h1 class="footer-blog-title">
-		<a href="/">Apolo&#39;s Blog</a>
-	</h1>
-	<span class="copyright">
-		&copy; 2017 Apolo Du<br>
-		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
-		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-	</span>
-</footer>
-    
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
+      
+        </div>
+      
+    </div>
   </div>
+  <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="/PhotoSwipe/photoswipe.css">
+  <link rel="stylesheet" href="/PhotoSwipe/default-skin/default-skin.css">
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+             It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides.
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+          <button class="pswp__button pswp__button--share" title="Share"></button>
+
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/PhotoSwipe/photoswipe.js"></script>
+  <script src="/PhotoSwipe/photoswipe-ui-default.js"></script>
+
+
+<script src="/perfect-scrollbar/js/min/perfect-scrollbar.min.js"></script>
+<script src="/scripts/main.js"></script>
+
 </body>
 </html>
